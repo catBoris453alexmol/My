@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.controllers.MainController">
+    <children>
+        <Text layoutX="254.0" layoutY="23.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Autoservice" textAlignment="CENTER">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Text>
+        <SplitPane dividerPositions="0.5" layoutY="31.0" orientation="VERTICAL" prefHeight="2.0" prefWidth="601.0">
+            <items>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="100.0" prefWidth="160.0" />
+            </items>
+        </SplitPane>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffffe1" height="358.0" layoutY="42.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="207.0" />
+        <Button fx:id="buttonOpenProgram" layoutX="465.0" layoutY="346.0" mnemonicParsing="false" onAction="#onActionOpenProgram" prefHeight="30.0" prefWidth="114.0" text="Open program">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+        <Button fx:id="buttonCloseRegistration" layoutX="477.0" layoutY="197.0" mnemonicParsing="false" onAction="#buttonRegistration" prefHeight="31.0" prefWidth="110.0" text="Регистрация" />
+        <Button fx:id="buttonExit" layoutX="230.0" layoutY="347.0" mnemonicParsing="false" onAction="#onActionExit" prefHeight="25.0" prefWidth="75.0" text="Exit">
+            <font>
+                <Font size="14.0" />
+            </font></Button>
+
+        <Text layoutX="226.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ИП Маковей Михаил Викторович ИНН 525911084829 ОГРНИП 308525914900018 НИЖЕГОРОДСКИЙ ФИЛИАЛ ЗАО ЮНИКРЕДИТ БАНК Г. НИЖНИЙ НОВГОРОД Р./сч 40802810800454504491 БИК 042202799 К/сч 30101810500000000799 Свидетельство гос. регистрации серия 52 № 003853595 от «28» мая 2008" textAlignment="JUSTIFY" wrappingWidth="355.13671875">
+            <font>
+                <Font size="14.0" />
+            </font>
+        </Text>
+        <ImageView fx:id="mainImage" fitHeight="358.0" fitWidth="200.0" layoutX="4.0" layoutY="43.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="238.0" layoutY="228.0" text="Login:" />
+      <Label layoutX="238.0" layoutY="263.0" text="Password:" />
+      <PasswordField fx:id="txtPassword" layoutX="303.0" layoutY="259.0" />
+      <TextField fx:id="txtLogin" layoutX="303.0" layoutY="224.0" />
+      <Label fx:id="lblInfo" layoutX="268.0" layoutY="304.0" text="Статус:" />
+    </children>
+</AnchorPane>

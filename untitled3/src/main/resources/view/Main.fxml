@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="700.0" prefWidth="950.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.sapteh.controllers.ClientController">
+    <children>
+        <TableView fx:id="tableViewClient" layoutX="14.0" layoutY="44.0" prefHeight="553.0" prefWidth="944.0" AnchorPane.bottomAnchor="103.0" AnchorPane.leftAnchor="5.0" AnchorPane.rightAnchor="1.0" AnchorPane.topAnchor="44.0">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="39.0" text="id" />
+                <TableColumn fx:id="gender" prefWidth="61.0" text="gender" />
+                <TableColumn fx:id="firstName" prefWidth="100.0" text="firstName" />
+                <TableColumn fx:id="lastName" prefWidth="93.0" text="lastName" />
+                <TableColumn fx:id="patronymic" prefWidth="82.0" text="patronymic" />
+                <TableColumn fx:id="birthday" prefWidth="75.0" text="birthday" />
+                <TableColumn fx:id="phone" prefWidth="75.0" text="phone" />
+                <TableColumn fx:id="email" prefWidth="75.0" text="email" />
+                <TableColumn fx:id="registrationDate" prefWidth="75.0" text="registrationDate" />
+                <TableColumn fx:id="lastVisitDate" prefWidth="75.0" text="lastVisitDate" />
+                <TableColumn fx:id="countVisit" prefWidth="75.0" text="countVisit" />
+                <TableColumn fx:id="tags" prefWidth="79.0" text="tags" />
+            </columns>
+        </TableView>
+        <ComboBox fx:id="sizeComboBox" layoutX="14.0" layoutY="612.0" prefHeight="25.0" prefWidth="90.0" />
+        <Pagination fx:id="sizePagination" layoutX="351.0" layoutY="602.0" prefHeight="50.0" prefWidth="270.0" />
+        <TextField fx:id="search_txt" layoutX="286.0" layoutY="14.0" prefHeight="25.0" prefWidth="228.0" />
+        <Label layoutX="222.0" layoutY="8.0" prefHeight="25.0" prefWidth="64.0" text="Поиск:">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </Label>
+      <Button fx:id="buttonRegNewClient" layoutX="740.0" layoutY="602.0" mnemonicParsing="false" onAction="#buttonRegNewClient" prefHeight="50.0" prefWidth="150.0" text="Добавить пользователя" />
+    </children>
+</AnchorPane>
